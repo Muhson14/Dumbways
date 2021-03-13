@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nomor 3</title>
+</head>
+
+<body>
+    <script>
+        square();
+
+        function square(){
+            var n = prompt("Panjang gambar ?", 5);
+
+            for(var i = 1; i <= n; i++)
+            {
+                if(i % 2 == 1)
+                {
+                    for(var j = 1; j <= n; j++)
+                    {
+                        document.write("* ");
+                    }
+                }
+
+                else
+                {
+                    for(var j = 1; j <= n; j++)
+                    {
+                        if(j == 1)
+                        {
+                            document.write("* ");
+                        }
+
+                        else if (j == n)
+                        {
+                            document.write("* ");
+                        }
+                        else
+                        {
+                            document.write("= ");
+                        }
+                    }
+                }
+                
+                document.write("<br>");
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>

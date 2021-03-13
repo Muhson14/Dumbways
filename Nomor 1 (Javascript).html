@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nomor 1</title>
+</head>
+
+<body>
+    <script>
+        var kecepatan = 3;
+        var jarak = kecepatan * 60 * 10;
+        const start = new Date('Mar 13, 2021 05:25:15').getTime();
+        const tujuan = new Date('Mar 13, 2021 09:00:00').getTime();
+        const selisih = tujuan - start;
+
+        const kenaikan10 = selisih - (1000 * 60 * 10);
+        kecepatan += 1;
+        
+        const jumlahkenaikan = Math.floor(kenaikan10 / (1000 * 60 * 7));
+
+        for(var i=1; i <= jumlahkenaikan; i++)
+        {
+            kecepatan += 1;
+            jarak = kecepatan * 60 * 7;
+        }
+
+        document.write('Dari jam 05:25:15 sampai dengan jam 09:00:00 didapatkan <br><br>' +
+        'Kecepatan sekarang = ' + kecepatan + ' meter/detik <br>' +
+        'Jarak yang ditempuh = ' + jarak + ' meter');
+    </script>
+</body>
+
+
+</html>
